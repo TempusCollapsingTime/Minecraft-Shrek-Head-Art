@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shrek</title>
+</head>
+<body>
+    <canvas id="myCanvas" width = "640" height="480" style="border: 1px solid black";></canvas>
+
+    <script>
+
+        // Calling Canvas
+        var canvas = document.getElementById("myCanvas");
+        var dt = canvas.getContext("2d");
+        // Variables
+        var a = 50/3, h = 480/8;
+        var w = 640/8;
+        var x = 0;
+        y = 0 + h;
+
+        // Head Shape
+        dt.fillStyle = "#c5d320"; 
+        dt.fillRect(0, 0, 640, 480);
+
+        // First eighth
+        dt.fillStyle = "#c5d320";
+        dt.fillRect(x, 160, x, h);
+
+        // Second eighth
+        dt.fillStyle = "#797629";
+        dt.fillRect(x, y, w, h);
+
+        dt.fillStyle = "#84812e";
+        dt.fillRect(x + w, y, w, h);
+        
+        dt.fillStyle = "#8f8c33";
+        dt.fillRect(x + w * 2, y, w, h);
+
+        dt.fillStyle = "#8f8c33";
+        dt.fillRect(x + w * 5, y, w * 2, h);
+
+        dt.fillStyle = "#84812e";
+        dt.fillRect(x + w * 7, y, w, h);
+
+        a = a + a;
+
+        // Third eighth
+        dt.fillStyle = "#bbc81e";
+        dt.fillRect(x, y + h, w, h);
+
+        dt.fillStyle = "#ffffff";
+        dt.fillRect(x + w, y + h, w, h);
+
+        dt.fillStyle = "#3a1500";
+        dt.fillRect(x + w * 2, y + h, w, h);
+
+        dt.fillStyle = "#ffffff";
+        dt.fillRect(x + w * 5, y + h, w, h);
+
+        dt.fillStyle = "#3a1500";
+        dt.fillRect(x + w * 6, y + h, w, h);
+
+            // Last Third Eigth and Fourth Eigth
+            dt.fillStyle = "#cbda21";
+            dt.fillRect(x + w * 7, y + h, w, h * 2);
+
+        // Fourth Eighth
+        dt.fillStyle = "#c3d120";
+        dt.fillRect(x, y + h * 2, w, h);   
+
+        dt.fillStyle = "#b3c01c";
+        dt.fillRect(x + w, y + h * 2, w * 2, h); 
+
+        dt.fillStyle = "#99a317";
+        dt.fillRect(x + w * 3, y + h * 2, w, h); 
+
+        dt.fillStyle = "#acb91a";
+        dt.fillRect(x + w * 4, y + h * 2, w, h); 
+        
+        dt.fillStyle = "#bbc81e";
+        dt.fillRect(x + w * 5, y + h * 2, w * 2, h);
+
+        // Fifth Eighth
+        dt.fillStyle = "#adb91a";
+        dt.fillRect(x, y + h * 3, w, h);   
+
+        dt.fillStyle = "#a9b51a";
+        dt.fillRect(x + w, y + h * 3, w * 2, h); 
+
+        dt.fillStyle = "#b5c21c";
+        dt.fillRect(x + w * 3, y + h * 3, w * 4, h); 
+
+        dt.fillStyle = "#b0bd1b";
+        dt.fillRect(x + w * 7, y + h * 3, w, h); 
+        
+        // Sixth Eigth
+        dt.fillStyle = "#b3c01c";
+        dt.fillRect(x, y + h * 4, w, h);   
+
+        dt.fillStyle = "#838a11";
+        dt.fillRect(x + w, y + h * 4, w * 8, h); 
+
+        dt.fillStyle = "#848a11";
+        dt.fillRect(x + w * 2, y + h * 4, w, h); 
+
+        dt.fillStyle = "#757d0e";
+        dt.fillRect(x + w * 5, y + h * 4, w, h); 
+        
+        dt.fillStyle = "#818a11";
+        dt.fillRect(x + w * 6, y + h * 4, w * 2, h);
+
+        dt.fillStyle = "#b9c61e";
+        dt.fillRect(x + w * 7, y + h * 4, w, h);
+
+        dt.fillStyle = "#919b14";
+        dt.fillRect(x + w * 3, y + h * 4, w * 2, h);
+
+        // 7th Eighth
+        dt.fillStyle = "#b6c11c";
+        dt.fillRect(x, y + h * 5, w, h);   
+
+        dt.fillStyle = "#b1bd1b";
+        dt.fillRect(x + w, y + h * 5, w, h); 
+
+        dt.fillStyle = "#b5c11c";
+        dt.fillRect(x + w * 2, y + h * 5, w, h); 
+
+        dt.fillStyle = "#b9c61e";
+        dt.fillRect(x + w * 3, y + h * 5, w, h); 
+
+        dt.fillStyle = "#c5d320";
+        dt.fillRect(x + w * 4, y + h * 5, w, h);   
+
+        dt.fillStyle = "#c1ce1f";
+        dt.fillRect(x + w * 5, y + h * 5, w, h); 
+
+        dt.fillStyle = "#b9c61e";
+        dt.fillRect(x + w * 6, y + h * 5, w, h); 
+
+        dt.fillStyle = "#b6c11c";
+        dt.fillRect(x + w * 7, y + h * 5, w, h); 
+
+        // 8th Eighth
+
+        dt.fillStyle = "#a9b41a";
+        dt.fillRect(x, y + h * 6, w * 3, h);   
+
+        dt.fillStyle = "#b1bd1b";
+        dt.fillRect(x + w * 3, y + h * 6, w, h); 
+
+        dt.fillStyle = "#a3af19";
+        dt.fillRect(x + w * 4, y + h * 6, w * 3, h); 
+
+        dt.fillStyle = "#99a317";
+        dt.fillRect(x + w * 7, y + h * 6, w, h); 
+
+        // Dark Outline
+        dt.lineWidth = 10; // # of Pixels Thick
+        dt.strokeStyle = "#223300";
+        dt.strokeRect(0, 0, 640, 480);
+        
+    </script>
+
+</body>
+</html>
